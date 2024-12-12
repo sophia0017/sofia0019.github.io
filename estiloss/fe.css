@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #0026ff;
+    padding: 10px 0;
+        background-image: url('frame-different-tools-toy-car-table.jpg');
+        height:600px;
+        background-repeat: no-repeat;
+        background-position:center;
+        background-attachment: cover;
+        background-size: cover;
+    }
+    header .menu{
+        margin:30px 0;
+        display:flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    header .menu a:hover{
+        text-decoration: underline;
+    }
+    header .menu a{
+        font-size:18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        display: inline-block;
+        padding:10px 0;
+        margin:0 15px;
+        color:#fff;
+        text-decoration: none;
+    
+    }
+    header .contenido-header{
+        margin:120px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    header .contenido-header .titulo-header{
+        font-size: 95px;
+        text-align: center;
+        color: white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header .contenido-header .linea-header{
+        width: 700px;
+        margin: auto;
+        height:2px;
+        background: #d67900;
+        margin-bottom:30px;
+        text-align: center;
+    }
+    
+    header .contenido-header .texto-header{
+        color: rgb(255, 255, 255);
+        font-weight: 300;
+        margin-bottom:30px;
+        font-size:20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header .contenido-header .action-header{
+        display: inline-block;
+        margin: auto;
+        color: #fff;   
+        text-decoration: none;
+        border:1px solid #d67900;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header .contenido-header .action-header:hover{
+        background: #d67900;
+        color: #fff;
+    }
+
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.top-nav a:hover {
+    background-color: #0011f8; /* Naranja */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #0011ff;
+    padding: 10px;
+    list-style-type: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.top-nav li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 10px 0;
+}
+
+
+.sidebar {
+    background-color: #ffb400;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #f8a900;
+}
+
+/* Contenido principal */
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.hero {
+    background-color: #ffb400;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.hero p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-card span {
+    color: #ffb400;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
